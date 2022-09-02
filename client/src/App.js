@@ -1,10 +1,33 @@
+import { Switch,BrowserRouter as Router,Route } from 'react-router-dom';
 import './App.css';
-
+import Start from "./pages/Start.jsx";
+import Home from "./pages/Home.jsx";
+import CreatePokemon from "./pages/CreatePokemon";
+import PokemonDetail from "./pages/PokemonDetail";
 function App() {
   return (
     <div className="App">
-      <h1>Henry Pokemon</h1>
+      <Router>
+      <Switch>
+          <Route exact path="/">
+            <Start />
+          </Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/create">
+            <CreatePokemon />
+          </Route>
+          <Route path='/pokemon'>
+            <PokemonDetail />
+          </Route>
+        </Switch>
+    
+    </Router>
     </div>
+
+
+
   );
 }
 
