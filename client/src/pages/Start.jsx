@@ -6,7 +6,7 @@ export default function Start(){
     return(
 
         <div className="startBackground">
-          <div className="button"><Link to={'/home'}>Enter</Link></div>  
+          <div className="button"><Link to={'/home'}>Welcome to POKEMON  !</Link></div>  
             
         </div>
 

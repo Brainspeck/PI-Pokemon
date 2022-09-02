@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
 .startBackground{
     display: flex;
     align-items: center;
@@ -8,12 +10,25 @@
     right: 0;
     left: 0;    
     
-    background-image: url("https://i2.wp.com/luzangela.es/wp-content/uploads/2016/07/pokemon-background-designs40.jpg?ssl=1");
+    background-image: url('../images/paisaje.jpg');
+    background-size: contain;
 }
 
 .button{
-    font-size: 50px;
-    color: blue;
-    font-family: sans-serif;
-}
+    font-size: 70px;
+    color: #c7a008;
+    font-family: 'Pokemon Solid', sans-serif;
+    text-decoration: none;
+    text-shadow: 10px 10px 1px #3C5AA6;
+    
+    }
 
+    a{
+        text-decoration: none;
+        color: #c7a008;
+        }
+
+        a:visited{
+            text-decoration: none;
+            color: #c7a008;
+        }
